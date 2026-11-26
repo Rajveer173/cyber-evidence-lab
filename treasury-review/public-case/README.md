@@ -12,3 +12,5 @@ python verify_receipt.py --rpc https://ethereum-rpc.publicnode.com
 The verifier checks the chain ID, receipt status, block hash at the receipt height and the node's finalized height. It compares the ordered log identities, emitters, topics, data and removal flags. These checks depend on the node's view of Ethereum. For an independent comparison, supply another provider.
 
 The raw logs were retrieved through Ethereum PublicNode. [Inspect the original transaction](https://etherscan.io/tx/0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425).
+
+For your own batch, pass `--case-dir PATH` with the same two filenames. Include complete receipt logs in their original order within each transaction. Transactions may be interleaved. The verifier retrieves every transaction named by either input, including transfers absent from the register, and checks them against one finalized-height snapshot. Transactions omitted from both inputs are outside the review.

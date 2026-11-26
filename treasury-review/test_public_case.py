@@ -33,6 +33,17 @@ class ArchivedReceiptTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "sequence"):
             verify(self.case, self.logs[:-1], self.rpc)
 
+    def test_also_verifies_unlisted_transaction(self):
+        extra_tx = "0x" + "ef" * 32
+        extra_log = dict(self.logs[0], transactionHash=extra_tx, logIndex="0xff")
+        def batch_rpc(method, params):
+            if method == "eth_getTransactionReceipt" and params == [extra_tx]:
+                return dict(self.receipt, transactionHash=extra_tx, logs=[extra_log])
+            return self.rpc(method, params)
+        self.assertEqual(verify(self.case, [extra_log, *self.logs], batch_rpc), 14)
+        with self.assertRaisesRegex(ValueError, "sequence"):
+            verify(self.case, [dict(extra_log, data="0x"), *self.logs], batch_rpc)
+
     def test_unfinalized_height(self):
         def behind(method, params):
             if params == ["finalized", False]:
