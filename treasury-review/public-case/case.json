@@ -1,0 +1,61 @@
+{
+  "chain_id": 1,
+  "treasury": "0xa9d1e08c7793af67e9d92fe308d5697fb81d3e43",
+  "tokens": [
+    "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+  ],
+  "blocks": {
+    "26496968": "0xc47f1c40b5c420807ec3675c216a6d42c85424f53dbe91181e46229d9289c998"
+  },
+  "payments": [
+    {
+      "ticket": "BASELINE-6",
+      "tx": "0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "to": "0xf4932d891f9fae2a6f5c354d859a130605af4b45",
+      "units": "33098999"
+    },
+    {
+      "ticket": "BASELINE-7",
+      "tx": "0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "to": "0x2bfb6228e9fb3bd7e5708ddb0e03f666d5582c99",
+      "units": "100000000"
+    },
+    {
+      "ticket": "BASELINE-8",
+      "tx": "0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "to": "0xe19f57d6935ccc76549b436085783d796272beb0",
+      "units": "150000000"
+    },
+    {
+      "ticket": "BASELINE-9",
+      "tx": "0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "to": "0x4b006aaaaa3bdbd1537c0d56892cfa8d6296da88",
+      "units": "699597347"
+    },
+    {
+      "ticket": "BASELINE-10",
+      "tx": "0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "to": "0x87c5ed62159b014a05f133b73ed80a7202e5335a",
+      "units": "99895040"
+    },
+    {
+      "ticket": "BASELINE-11",
+      "tx": "0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "to": "0x33201714c9cc08e3bba37d55534d547e97e1efc9",
+      "units": "55610000"
+    },
+    {
+      "ticket": "BASELINE-12",
+      "tx": "0x368b0297d646c3ac640bd96593f4ad5293dc1a2a3e0ea6f17a86b59c07a98425",
+      "token": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+      "to": "0x21c2583f59891120a74c9d8ae39a7834aaff50a9",
+      "units": "35169164"
+    }
+  ]
+}

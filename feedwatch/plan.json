@@ -1,0 +1,14 @@
+{
+  "identity": {
+    "start": "2026-10-01T09:00:00Z",
+    "end": "2026-10-01T09:30:00Z",
+    "interval_minutes": 5,
+    "grace_minutes": 2
+  },
+  "endpoint": {
+    "start": "2026-10-01T09:00:00Z",
+    "end": "2026-10-01T09:30:00Z",
+    "interval_minutes": 5,
+    "grace_minutes": 2
+  }
+}

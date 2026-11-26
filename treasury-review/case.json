@@ -1,0 +1,26 @@
+{
+  "chain_id": 1,
+  "treasury": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "tokens": [
+    "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  ],
+  "blocks": {
+    "100": "0xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "payments": [
+    {
+      "ticket": "PAY-81",
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "token": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "to": "0xcccccccccccccccccccccccccccccccccccccccc",
+      "units": "5000000"
+    },
+    {
+      "ticket": "PAY-82",
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "token": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "to": "0xdddddddddddddddddddddddddddddddddddddddd",
+      "units": "5000000"
+    }
+  ]
+}

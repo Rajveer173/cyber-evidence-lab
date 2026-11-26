@@ -1,0 +1,92 @@
+{
+  "chain_id": 1,
+  "findings": [
+    {
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "token": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "recipient": "0xcccccccccccccccccccccccccccccccccccccccc",
+      "tickets": [
+        "PAY-81"
+      ],
+      "expected_units": "5000000",
+      "observed_units": "5000000",
+      "evidence_rows": [
+        1,
+        2
+      ],
+      "status": "matched"
+    },
+    {
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "token": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "recipient": "0xdddddddddddddddddddddddddddddddddddddddd",
+      "tickets": [
+        "PAY-82"
+      ],
+      "expected_units": "5000000",
+      "observed_units": "0",
+      "evidence_rows": [],
+      "status": "unobserved_payment"
+    },
+    {
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "token": "0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+      "recipient": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "tickets": [],
+      "expected_units": "0",
+      "observed_units": "5000000",
+      "evidence_rows": [
+        3
+      ],
+      "status": "unlisted_transfer"
+    }
+  ],
+  "audit": [
+    {
+      "row": 1,
+      "height": 100,
+      "index": 0,
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "decision": "counted"
+    },
+    {
+      "row": 2,
+      "height": 100,
+      "index": 1,
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "decision": "counted"
+    },
+    {
+      "row": 3,
+      "height": 100,
+      "index": 2,
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "decision": "counted"
+    },
+    {
+      "row": 4,
+      "height": 100,
+      "index": 1,
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "decision": "duplicate"
+    },
+    {
+      "row": 5,
+      "height": 100,
+      "index": 2,
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "decision": "other_block_hash"
+    },
+    {
+      "row": 6,
+      "height": 100,
+      "index": 3,
+      "tx": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "decision": "untracked_contract"
+    }
+  ],
+  "input_sha256": {
+    "case": "e8c0aa208c99fd341159c6fb32b9370b3591482b18e0ab798c080702a296dda0",
+    "logs": "0898dbb50f8352666121ff386fb331f3603cc335050e5c87c4fbe8fc001dbbfc"
+  }
+}

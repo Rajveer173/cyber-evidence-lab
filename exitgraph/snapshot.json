@@ -1,0 +1,48 @@
+{
+  "people": {
+    "mira": "departed",
+    "dev": "active"
+  },
+  "memberships": [
+    [
+      "mira",
+      "billing"
+    ],
+    [
+      "mira",
+      "rotation"
+    ],
+    [
+      "dev",
+      "billing"
+    ],
+    [
+      "billing",
+      "finance"
+    ],
+    [
+      "rotation",
+      "finance"
+    ],
+    [
+      "finance",
+      "reviewers"
+    ],
+    [
+      "reviewers",
+      "finance"
+    ]
+  ],
+  "grants": [
+    [
+      "finance",
+      "invoice-archive",
+      "read"
+    ],
+    [
+      "mira",
+      "support-export",
+      "owner"
+    ]
+  ]
+}
